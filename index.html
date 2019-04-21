@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Form Submit</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="form__wrapper  form__wrapper--feedback">
+   <form id="form-feedback">
+       <h1>Обратная связь</h1>
+       <div class="fields">
+           <label for="feedback-name">Ваше имя:</label>
+           <input type="text" id="feedback-name"  name="name">
+       </div>
+	   <div class="fields">
+           <label for="feedback-tel">Ваш телефон:</label>
+           <input type="text" id="feedback-tel" name="phone">
+       </div>
+       <button>Отправить</button>
+   </form>
+   <div id="feedback-success" class="success">
+     <h1>Спасибо за заявку !</h1>
+     <p>Мы свяжемся с Вами в ближайшее время</p>
+     <button type="button" class="success-close">Закрыть</button>
+   </div>
+</div>
+
+<div class="form__wrapper  form__wrapper--review">
+    <form id="form-review">
+        <h1>Отзывы</h1>
+        <div class="fields">
+            <label for="review-name">Ваше имя:</label>
+            <input type="text" id="review-name"  name="name">
+        </div>
+
+        <div class="fields">
+            <label for="review-email">Ваш e-mail:</label>
+            <input type="text" id="review-email" placeholder="youmail@domain.ru" name="email">
+        </div>
+
+        <div class="fields">
+            <label for="review-text">Ваш отзыв:</label>
+            <textarea  id="review-text" name="mess"> </textarea>
+        </div>
+        <button>Отправить</button>
+    </form>
+    <div id="review-success" class="success">
+        <h1>Спасибо за отзыв !</h1>
+        <p>Вы помогаете нам становиться лучше </p>
+        <button type="button" class="success-close">Закрыть</button>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="validation.js"></script>
+</body>
+</html>
